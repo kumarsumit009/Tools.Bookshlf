@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+body,
+html
+{
+    height: 100%;
+    margin:0;
+    font-family: 'Poiret One', cursive;
+    font-size: 16px;
+}
+.background-image
+{
+  background-image: url('images/bg-coming-soon-img.jpg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  letter-spacing: 5px;
+}
+.cover
+{
+    background-color:rgba(0,0,0,0.75);
+    height: 100%;
+    width:100%;
+}
+.top-left {
+    position: absolute;
+    top: 0;
+    left: 16px;
+    font-size: 30px;
+    padding: 10px;
+}
+#t1
+{
+    font-size: 7.5em;
+    font-family: 'Squada One', cursive;
+    color:whitesmoke;
+}
+#tt1:hover
+{
+    color:#ff471a;
+    transition: 0.2s;
+}
+#tt2:hover
+{
+    color:whitesmoke;
+    transition: 0.2s;
+}
+.top-middle 
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+hr 
+{
+    margin-top:-70px;
+    width: 80%;
+    border: 2px solid white;
+}
+.bottom-right{
+    position: absolute;
+    bottom: 10px;
+    right: 16px;
+}
+a{
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    color:cyan;
+    font-family: monospace;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+a:hover{
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+img
+{
+    height: 40px;
+    width:40px;
+}
+
+@media only screen and (max-width:560px)
+{
+    #t1 
+    {
+        font-size: 5em;
+    }
+    hr 
+    {
+        margin-top:-40px;
+    }
+    img
+    {
+        height: 30px;
+        width: 30px;
+    }
+}
+@media only screen and (max-width:340px)
+{
+    #t1 
+    {
+        font-size: 4em;
+    }
+    hr 
+    {
+        margin-top:-30px;
+    }
+    img
+    {
+        height: 30px;
+        width: 30px;
+    }
+    a
+    {
+        display: inline;
+    }
+    .top-left
+    {
+        left:60px;
+    }
+    .icon
+    {
+        margin: 10px;   
+    }
+}
