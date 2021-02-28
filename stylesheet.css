@@ -6,6 +6,7 @@ html {
   margin: 0;
   font-family: "Poiret One", cursive;
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 .background-image {
   background-image: url("images/bg-coming-soon-img.jpg");
@@ -75,10 +76,13 @@ a:hover {
   transform: scale(1.1);
 }
 img {
+  height: 100px;
+  width: 100px;
+}
+.bottom-right img {
   height: 40px;
   width: 40px;
 }
-
 @media only screen and (max-width: 560px) {
   .top-left img {
     display: none;
