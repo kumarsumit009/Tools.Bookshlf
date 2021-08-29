@@ -154,9 +154,15 @@ img {
   bottom: 10px;
   left: 16px;
 }
+.social-icons {
+  display: none;
+}
 @media only screen and (max-width: 560px) {
   .top-left img {
     display: none;
+  }
+  .social-icons {
+    display: block;
   }
   .neon-bookshlf a {
     font-size: 3em;
@@ -296,5 +302,8 @@ img {
   }
   .icon {
     margin: 10px;
+  }
+  .social-icons {
+    display: block;
   }
 }
