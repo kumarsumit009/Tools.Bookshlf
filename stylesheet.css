@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Squada+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 body,
 html {
   height: 100%;
@@ -8,9 +10,30 @@ html {
   font-size: 16px;
   scroll-behavior: smooth;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f5c27f;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(253, 97, 7);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(253, 97, 7);
+}
+
 .background-image {
   background-image: url("images/bg-coming-soon-img.jpg");
-  height: 100%;
+  height: calc(100% - 66px);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -18,32 +41,44 @@ html {
   letter-spacing: 5px;
 }
 .cover {
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(34, 34, 34, 0.9);
   height: 100%;
   width: 100%;
 }
-.top-left {
-  position: absolute;
-  top: 0;
-  left: 16px;
-  padding: 10px;
+/*Neon*/
+.neon-bookshlf a {
+  text-align: center;
+  font-size: 6em;
+  margin: 20px 0 20px 0;
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  color: #ff9900;
+  font-family: "Audiowide", cursive;
 }
-.top-left img {
-  height: 150px;
-  width: 150px;
+
+.neon-bookshlf a {
+  -webkit-animation: neon 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon 1.5s ease-in-out infinite alternate;
+  animation: neon 1.5s ease-in-out infinite alternate;
 }
-#t1 {
-  font-size: 7.5em;
-  font-family: "Squada One", cursive;
-  color: whitesmoke;
+
+@keyframes neon {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff9900,
+      0 0 70px #ff9900, 0 0 80px #ff9900, 0 0 100px #ff9900, 0 0 150px #ff9900;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff9900,
+      0 0 35px #ff9900, 0 0 40px #ff9900, 0 0 50px #ff9900, 0 0 75px #ff9900;
+  }
 }
-#tt1:hover {
-  color: #ff471a;
-  transition: 0.2s;
+.brand {
+  height: 50px;
 }
-#tt2:hover {
-  color: whitesmoke;
-  transition: 0.2s;
+.nav-custom {
+  padding: 0px;
 }
 .top-middle {
   position: absolute;
@@ -53,9 +88,8 @@ html {
   text-align: center;
 }
 hr {
-  margin-top: -70px;
-  width: 80%;
-  border: 2px solid white;
+  width: 100%;
+  height: 5px;
 }
 .bottom-right {
   position: absolute;
@@ -64,7 +98,6 @@ hr {
 }
 a {
   display: block;
-  margin-top: 20px;
   text-decoration: none;
   color: cyan;
   font-family: monospace;
@@ -73,7 +106,6 @@ a {
 }
 a:hover {
   opacity: 0.8;
-  transform: scale(1.1);
 }
 img {
   height: 100px;
@@ -83,37 +115,181 @@ img {
   height: 40px;
   width: 40px;
 }
+
+.bottom-right a {
+  margin: 20px;
+}
+.make-shake:hover {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+.bottom-left {
+  position: absolute;
+  bottom: 10px;
+  left: 16px;
+}
 @media only screen and (max-width: 560px) {
   .top-left img {
     display: none;
   }
-  #t1 {
-    font-size: 5em;
+  .neon-bookshlf a {
+    font-size: 3em;
+  }
+  .bottom-left {
+    left: 80px;
   }
   hr {
-    margin-top: -40px;
+    height: 3px;
   }
   img {
     height: 30px;
     width: 30px;
   }
+  .bottom-right {
+    display: none;
+  }
+}
+
+.offcanvas-custom {
+  color: #ff9900;
+  font-family: "Audiowide", cursive;
+}
+.rank-form {
+  color: rgb(34, 34, 34);
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+}
+.btn {
+  letter-spacing: 1px;
+}
+#emailHelp {
+  font-size: 12px;
+}
+#loading {
+  display: none;
+  margin-top: 15px;
+}
+
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: rgb(36, 36, 36);
+  margin: -4px 0 0 -4px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.result-box {
+  margin-top: 15px;
 }
 @media only screen and (max-width: 340px) {
   .top-left img {
     display: none;
   }
-  #t1 {
-    font-size: 4em;
-  }
-  hr {
-    margin-top: -30px;
-  }
   img {
     height: 30px;
     width: 30px;
-  }
-  a {
-    display: inline;
   }
   .top-left {
     left: 60px;
