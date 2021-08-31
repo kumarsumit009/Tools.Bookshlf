@@ -304,11 +304,7 @@
         </a>
         <span
           >©
-          <script>
-            document
-              .getElementById("copyright")
-              .appendChild(document.createTextNode(new Date().getFullYear()));
-          </script>
+          <span id="current-year"></span>
           Bookshlf All Rights Reserved.</span
         >
       </div>
@@ -339,4 +335,9 @@
 
   <!-- Scripts -->
   <script src="scripts/rank-predictor.js"></script>
+  <script>
+    document
+      .getElementById("current-year")
+      .appendChild(document.createTextNode(new Date().getFullYear()));
+  </script>
 </html>
