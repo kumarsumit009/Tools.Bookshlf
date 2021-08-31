@@ -32,18 +32,41 @@ html {
 }
 
 .background-image {
-  background-image: url("images/bg-coming-soon-img.jpg");
-  height: calc(100% - 66px);
+  height: calc(100% - (129px));
   background-position: center;
   background-size: cover;
   position: relative;
-  color: white;
-  letter-spacing: 5px;
 }
 .cover {
-  background-color: rgba(34, 34, 34, 0.9);
+  background-color: #330033;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='348' height='348' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23404' stroke-width='2.3'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23505'%3E%3Ccircle cx='769' cy='229' r='9'/%3E%3Ccircle cx='539' cy='269' r='9'/%3E%3Ccircle cx='603' cy='493' r='9'/%3E%3Ccircle cx='731' cy='737' r='9'/%3E%3Ccircle cx='520' cy='660' r='9'/%3E%3Ccircle cx='309' cy='538' r='9'/%3E%3Ccircle cx='295' cy='764' r='9'/%3E%3Ccircle cx='40' cy='599' r='9'/%3E%3Ccircle cx='102' cy='382' r='9'/%3E%3Ccircle cx='127' cy='80' r='9'/%3E%3Ccircle cx='370' cy='105' r='9'/%3E%3Ccircle cx='578' cy='42' r='9'/%3E%3Ccircle cx='237' cy='261' r='9'/%3E%3Ccircle cx='390' cy='382' r='9'/%3E%3C/g%3E%3C/svg%3E");
   height: 100%;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#t2 {
+  color: #ff9900;
+}
+.contact-us {
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+  color: rgb(34, 34, 34);
+  border: none;
+  border-radius: 50px;
+}
+.contact-us a {
+  color: blueviolet;
+  font-family: "Roboto", sans-serif;
+}
+.contact-us a:hover {
+  color: rgb(253, 97, 7);
+  letter-spacing: 3px;
+  transition: all 0.5s;
+}
+h4 {
+  color: white;
 }
 /*Neon*/
 .neon-bookshlf a {
@@ -59,9 +82,9 @@ html {
 }
 
 .neon-bookshlf a {
-  -webkit-animation: neon 1.5s ease-in-out infinite alternate;
-  -moz-animation: neon 1.5s ease-in-out infinite alternate;
-  animation: neon 1.5s ease-in-out infinite alternate;
+  -webkit-animation: neon 0.75s ease-in-out infinite alternate;
+  -moz-animation: neon 0.75s ease-in-out infinite alternate;
+  animation: neon 0.75s ease-in-out infinite alternate;
 }
 
 @keyframes neon {
@@ -81,15 +104,13 @@ html {
   padding: 0px;
 }
 .top-middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   text-align: center;
+  max-width: 50%;
 }
 hr {
   width: 100%;
   height: 5px;
+  border: 1px solid #fff;
 }
 .bottom-right {
   position: absolute;
@@ -107,10 +128,7 @@ a {
 a:hover {
   opacity: 0.8;
 }
-img {
-  height: 100px;
-  width: 100px;
-}
+
 .bottom-right img {
   height: 40px;
   width: 40px;
@@ -154,8 +172,24 @@ img {
   bottom: 10px;
   left: 16px;
 }
+.bottom-left a {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  background-color: rgb(253, 97, 7);
+}
 .social-icons {
   display: none;
+}
+.brand-footer {
+  height: 30px;
+  width: 30px;
+}
+footer {
+  color: rgb(255, 255, 255);
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(34, 34, 34);
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 @media only screen and (max-width: 560px) {
   .top-left img {
@@ -184,7 +218,10 @@ img {
 
 .offcanvas-custom {
   color: #ff9900;
-  font-family: "Audiowide", cursive;
+  font-family: "Roboto", cursive;
+}
+.offcanvas-custom h5 {
+  color: blueviolet;
 }
 .rank-form {
   color: rgb(34, 34, 34);
@@ -287,7 +324,13 @@ img {
   }
 }
 .result-box {
+  display: none;
   margin-top: 15px;
+  font-size: 12px;
+}
+.result-box table th,
+td {
+  text-align: center;
 }
 @media only screen and (max-width: 340px) {
   .top-left img {

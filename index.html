@@ -22,10 +22,16 @@
       crossorigin="anonymous"
     ></script>
 
-    <link href="stylesheet.css" type="text/css" rel="stylesheet" />
-    <script src="rank-predictor.js"></script>
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/23f4950f67.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS -->
+    <link href="css/stylesheet.css" type="text/css" rel="stylesheet" />
   </head>
   <body>
+    <!-- Navbar -->
     <nav class="navbar navbar-dark bg-dark sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand make-shake nav-custom" href="">
@@ -51,12 +57,12 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="bookshlf.in"
-                >Home</a
+                ><i class="fas fa-home"></i>&nbsp;Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="shop.html" target="_blank"
-                >Buy & Sell Books</a
+              <a class="nav-link" href="pages/shop.html" target="_blank"
+                ><i class="fas fa-store-alt"></i>&nbsp;Buy & Sell Books</a
               >
             </li>
             <li class="nav-item social-icons">
@@ -87,59 +93,39 @@
         </div>
       </div>
     </nav>
+
+    <!--Main Content-->
     <div class="background-image">
       <div class="cover">
         <div class="top-middle">
           <p class="neon-bookshlf">
-            <a href="">BOOKSHLF </a>
+            <a>BOOKSHLF</a>
           </p>
           <hr />
           <h1 id="t2">COMING SOON</h1>
           <h4>Buy & Sell Used Books</h4>
           <h4>Specially for Competitive Exams</h4>
-          <p>
+          <p class="contact-us">
             Contact us
-            <a href="mailto:contact@bookshlf.in">contact@bookshlf.in</a>
+            <a href="mailto:contact@bookshlf.in"
+              ><i class="fas fa-envelope"></i>&nbsp;contact@bookshlf.in</a
+            >
           </p>
-          <a href="shop.html" target="_blank"
-            ><img src="images/buy.svg" alt="buy&sell" class="make-shake"
+          <a href="pages/shop.html" target="_blank"
+            ><img
+              src="images/buy.svg"
+              alt="buy&sell"
+              class="make-shake"
+              height="100px"
           /></a>
           <br />
           <p>
-            <span id="copyright">
-              <script>
-                document
-                  .getElementById("copyright")
-                  .appendChild(
-                    document.createTextNode(new Date().getFullYear())
-                  );
-              </script>
-            </span>
+            <span id="copyright"> </span>
           </p>
-        </div>
-        <div class="bottom-right">
-          <a
-            href="https://www.youtube.com/channel/UCvZJWq7cQ4-cGJFsCWIppGQ"
-            target="_blank"
-            class="icon make-shake"
-            ><img src="./images/youtube.svg"
-          /></a>
-          <a
-            href="https://www.facebook.com/Bookshlf-109479771200918"
-            target="_blank"
-            class="icon make-shake"
-            ><img src="./images/facebook.svg"
-          /></a>
-          <a
-            href="https://www.instagram.com/_bookshlf/"
-            target="_blank"
-            class="icon make-shake"
-            ><img src="./images/instagram.svg"
-          /></a>
         </div>
         <div class="bottom-left">
           <a
-            class="btn btn-info"
+            class="btn btn-info make-shake"
             data-bs-toggle="offcanvas"
             href="#offcanvasExample"
             role="button"
@@ -155,7 +141,10 @@
           >
             <div class="offcanvas-header offcanvas-custom">
               <h5 class="offcanvas-title" id="offcanvasExampleLabel">
-                JEE Mains Rank Predictor
+                <img
+                  src="images/jee-mains.jpg"
+                  height="50px"
+                />JEE&nbsp;Mains&nbsp;Rank&nbsp;Predictor
               </h5>
               <button
                 type="button"
@@ -176,10 +165,61 @@
                     id="percentile"
                     aria-describedby="emailHelp"
                     onchange="handelchange()"
+                    placeholder="eg : 98.7689731"
                   />
                   <div id="emailHelp" class="form-text">
                     Please enter the exact percentile you got in your result to
                     get most accurate results.
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="inlineRadioOptions"
+                      id="inlineRadio4"
+                      value="option4"
+                    />
+                    <label class="form-check-label" for="inlineRadio4"
+                      >GEN</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="inlineRadioOptions"
+                      id="inlineRadio1"
+                      value="option1"
+                    />
+                    <label class="form-check-label" for="inlineRadio1"
+                      >OBC</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="inlineRadioOptions"
+                      id="inlineRadio2"
+                      value="option2"
+                    />
+                    <label class="form-check-label" for="inlineRadio2"
+                      >SC</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="inlineRadioOptions"
+                      id="inlineRadio3"
+                      value="option3"
+                    />
+                    <label class="form-check-label" for="inlineRadio3"
+                      >ST</label
+                    >
                   </div>
                 </div>
                 <button
@@ -204,15 +244,103 @@
                     <div></div>
                   </div>
                 </div>
-                <div class="result-box">
-                  <h5 id="result-box-message"></h5>
-                  <h1 id="result-box-result"></h1>
+                <div class="result-box" id="result-box">
+                  <table class="table table-dark table-bordered">
+                    <thead class="table-dark align-middle">
+                      <th class="table-dark">Percentile</th>
+                      <th class="table-dark">CRL</th>
+                      <th class="table-dark" id="category"></th>
+                    </thead>
+                    <tbody>
+                      <tr class="table-light">
+                        <td id="result-percentile"></td>
+                        <td id="result-crl"></td>
+                        <td id="result-cat-rank"></td>
+                      </tr>
+                    </tbody>
+                    <tfoot></tfoot>
+                  </table>
+
+                  <div
+                    class="alert alert-info alert-dismissible fade show"
+                    role="alert"
+                  >
+                    <strong><i class="fas fa-info-circle"></i></strong> All
+                    shown results are predicted with latest previous data
+                    available. For any other Query mail us at
+                    contact@bookshlf.in.
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="alert"
+                      aria-label="Close"
+                    ></button>
+                  </div>
                 </div>
+                <h3 id="result-box-message"></h3>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- Footer -->
+    <footer
+      class="
+        d-flex
+        flex-wrap
+        justify-content-between
+        align-items-center
+        py-3
+        border-top
+      "
+    >
+      <div class="col-md-4 d-flex align-items-center">
+        <a
+          href="/"
+          class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+        >
+          <img
+            src="images/smallLogo.svg"
+            alt="bookshlf.in"
+            class="d-inline-block align-text-center brand-footer"
+          />
+        </a>
+        <span
+          >©
+          <script>
+            document
+              .getElementById("copyright")
+              .appendChild(document.createTextNode(new Date().getFullYear()));
+          </script>
+          Bookshlf All Rights Reserved.</span
+        >
+      </div>
+
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3">
+          <a
+            href="https://www.facebook.com/Bookshlf-109479771200918"
+            target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+        </li>
+        <li class="ms-3">
+          <a href="https://www.instagram.com/_bookshlf/" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </li>
+        <li class="ms-3">
+          <a
+            href="https://www.youtube.com/channel/UCvZJWq7cQ4-cGJFsCWIppGQ"
+            target="_blank"
+            ><i class="fab fa-youtube"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
   </body>
+
+  <!-- Scripts -->
+  <script src="scripts/rank-predictor.js"></script>
 </html>
