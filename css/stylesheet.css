@@ -177,6 +177,9 @@ footer {
   padding-right: 1rem;
   padding-left: 1rem;
 }
+.offcanvas-start {
+  width: calc(min(100vw, 500px));
+}
 @media only screen and (max-width: 560px) {
   .top-left img {
     display: none;
