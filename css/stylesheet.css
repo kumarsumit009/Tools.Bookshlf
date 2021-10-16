@@ -9,7 +9,6 @@ html {
   font-size: 16px;
   scroll-behavior: smooth;
 }
-
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -386,7 +385,7 @@ td {
 }
 
 .background-container {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   bottom: 0;
