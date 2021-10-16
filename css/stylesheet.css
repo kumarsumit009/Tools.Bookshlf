@@ -47,14 +47,14 @@ html {
   flex-direction: column;
 }
 #t2 {
-  color: #ff9900;
+  color: #300E2F;
 }
 .contact-us {
-  background-color: #fff;
+  background-color: #f3fbff8c;
   font-family: "Roboto", sans-serif;
   color: rgb(34, 34, 34);
   border: none;
-  border-radius: 50px;
+  border-radius: 10px;
 }
 .contact-us a {
   color: blueviolet;
