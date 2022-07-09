@@ -1,2 +1,2 @@
-# Bookshlf
-This is official repo of bookshlf.in
+# Bookshlf.Tools
+This is official subsidiary of bookshlf.in
