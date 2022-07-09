@@ -1,343 +1,74 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Bookshlf" />
-    <meta
-      name="description"
-      content="An online reusable book store to buy or sell used books. Specifically for Competitive Exams"
-    />
-    <title>Bookshlf</title>
 
-    <!-- bootstrap 5.0 CDN -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Bookshlf" />
+  <meta name="description"
+    content="An online reusable book store to buy or sell used books. Specifically for Competitive Exams" />
+  <title>Bookshlf Tools</title>
 
-    <!-- Font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/23f4950f67.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- CSS -->
-    <link href="css/stylesheet.css" type="text/css" rel="stylesheet" />
-    <link rel="shortcut icon" href="https://img.bookshlf.in/logo/favicon.ico" type="image/x-icon"> 
-  </head>
+  <!-- bootstrap 5.2 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-dark bg-dark sticky-top">
-      <div class="container-fluid">
-        <a class="navbar-brand make-shake nav-custom" href="">
-          <img
-            src="images/smallLogo.svg"
-            alt="bookshlf.in"
-            class="d-inline-block align-text-center brand"
-          />
-          BOOKSHLF
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="https://bookshlf.in/"
-                ><i class="fas fa-home"></i>&nbsp;Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pages/shop.html" target="_blank"
-                ><i class="fas fa-store-alt"></i>&nbsp;Buy & Sell Books</a
-              >
-            </li>
-            <li class="nav-item social-icons">
-              <a
-                href="https://www.youtube.com/channel/UCvZJWq7cQ4-cGJFsCWIppGQ"
-                target="_blank"
-                class="icon make-shake nav-link"
-                ><img src="./images/youtube.svg"
-              /></a>
-            </li>
-            <li class="nav-item social-icons">
-              <a
-                href="https://www.facebook.com/Bookshlf-109479771200918"
-                target="_blank"
-                class="icon make-shake nav-link"
-                ><img src="./images/facebook.svg"
-              /></a>
-            </li>
-            <li class="nav-item social-icons">
-              <a
-                href="https://www.instagram.com/_bookshlf/"
-                target="_blank"
-                class="icon make-shake nav-link"
-                ><img src="./images/instagram.svg"
-              /></a>
-            </li>
-            <li class="nav-item social-icons">
-              <a
-                href="https://www.linkedin.com/in/bookshlf-by-aman-861073223/"
-                target="_blank"
-                class="icon make-shake nav-link"
-                ><img src="./images/linkedin.svg"
-              /></a>
-            </li>
-            <li class="nav-item social-icons">
-              <a
-                href="https://twitter.com/BookshlfA"
-                target="_blank"
-                class="icon make-shake nav-link"
-                ><img src="./images/twitter.svg"
-              /></a>
-            </li>
-          </ul>
-        </div>
+  <!-- Font Awesome 5.1.2 -->
+  <script src="https://kit.fontawesome.com/23f4950f67.js" crossorigin="anonymous"></script>
+  <!-- CSS -->
+  <link href="css/stylesheet.css" type="text/css" rel="stylesheet" />
+  <link rel="shortcut icon" href="https://img.bookshlf.in/logo/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand make-shake nav-custom" href="">
+        <img src="images/smallLogo.svg" alt="bookshlf.in" class="d-inline-block align-text-center brand" />
+        BOOKSHLF TOOLS
+      </a>
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href=""><i class="fas fa-home"></i>&nbsp; Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://bookshlf.in" target="_blank"><i class="fas fa-store-alt"></i>&nbsp;Buy &
+              Sell
+              Books</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="pages/Tools.html" target="_blank"><i class="fas fa-tools"></i> &nbsp;Tools</a>
+          </li> -->
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <!--Main Content-->
-    <div class="container-fluid main-content">
-      <div class="background-container">
-        <img src="./images/diwali.jpg" alt="Diwali background">
-        <!-- <div class="stars"></div>
-        <div class="twinkling"></div>
-        <div class="clouds"></div> -->
-        <div class="cover">
-        <div class="top-middle">
-          <p class="neon-bookshlf">
-            <a>BOOKSHLF</a>
-          </p>
-          <hr />
-          <h1 id="t2">COMING SOON</h1>
-          <h4>Buy & Sell Used Books</h4>
-          <h4>Specially for Competitive Exams</h4>
-          <p class="contact-us">
-            Contact us
-            <a href="mailto:contact@bookshlf.in"
-              ><i class="fas fa-envelope"></i>&nbsp;contact@bookshlf.in</a
-            >
-          </p>
-          <a href="pages/shop.html" target="_blank"
-            ><img
-              src="images/buy.svg"
-              alt="buy&sell"
-              class="make-shake"
-              height="100px"
-          /></a>
-        </div>
-        <div class="bottom-left">
-          <a
-            class="btn btn-info make-shake"
-            data-bs-toggle="offcanvas"
-            href="#offcanvasExample"
-            role="button"
-            aria-controls="offcanvasExample"
-          >
-            JEE Mains Rank Predictor
-          </a>
-          <div
-            class="offcanvas offcanvas-start"
-            tabindex="-1"
-            id="offcanvasExample"
-            aria-labelledby="offcanvasExampleLabel"
-          >
-            <div class="offcanvas-header offcanvas-custom">
-              <h5 class="offcanvas-title" id="offcanvasExampleLabel">
-                <img
-                  src="images/jee-mains.jpg"
-                  height="50px"
-                />JEE&nbsp;Mains&nbsp;Rank&nbsp;Predictor
-              </h5>
-              <button
-                type="button"
-                class="btn-close text-reset"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="offcanvas-body">
-              <form class="rank-form">
-                <div class="mb-3">
-                  <label for="percentile" class="form-label"
-                    >Your Percentile in JEE Mains</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="percentile"
-                    aria-describedby="emailHelp"
-                    onchange="handelchange()"
-                    placeholder="eg : 98.7689731"
-                  />
-                  <div id="emailHelp" class="form-text">
-                    Please enter the exact percentile you got in your result to
-                    get most accurate results.
-                  </div>
-                </div>
-                <div class="mb-3">
-                  <div class="form-check form-check-inline">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="inlineRadioOptions"
-                      id="inlineRadio4"
-                      value="option4"
-                    />
-                    <label class="form-check-label" for="inlineRadio4"
-                      >GEN</label
-                    >
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="inlineRadioOptions"
-                      id="inlineRadio5"
-                      value="option5"
-                    />
-                    <label class="form-check-label" for="inlineRadio5"
-                      >EWS</label
-                    >
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="inlineRadioOptions"
-                      id="inlineRadio1"
-                      value="option1"
-                    />
-                    <label class="form-check-label" for="inlineRadio1"
-                      >OBC</label
-                    >
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="inlineRadioOptions"
-                      id="inlineRadio2"
-                      value="option2"
-                    />
-                    <label class="form-check-label" for="inlineRadio2"
-                      >SC</label
-                    >
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="inlineRadioOptions"
-                      id="inlineRadio3"
-                      value="option3"
-                    />
-                    <label class="form-check-label" for="inlineRadio3"
-                      >ST</label
-                    >
-                  </div>
-                </div>
-                <button
-                  type="button"
-                  class="btn btn-success"
-                  id="rank"
-                  onclick="predictRank()"
-                >
-                  Predict Rank
-                </button>
-              </form>
-              <div class="results rank-form" id="results">
-                <div class="loading" id="loading">
-                  <div class="lds-roller">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                  </div>
-                </div>
-                <div class="result-box" id="result-box">
-                  <table class="table table-dark table-bordered">
-                    <thead class="table-dark align-middle">
-                      <th class="table-dark">Percentile</th>
-                      <th class="table-dark">CRL</th>
-                      <th class="table-dark" id="category"></th>
-                    </thead>
-                    <tbody>
-                      <tr class="table-light">
-                        <td id="result-percentile"></td>
-                        <td id="result-crl"></td>
-                        <td id="result-cat-rank"></td>
-                      </tr>
-                    </tbody>
-                    <tfoot></tfoot>
-                  </table>
+  <!--Main Content-->
+  <div class="container-fluid main-content">
+    <div class="container cover">
+      <figure class="figure">
+        <img src="images/Home/idea.gif" alt="Tools Bookshlf" class="figure-img img-fluid rounded idea-img" />
+      </figure>
+      <a type="button" class="btn btn-outline-primary btn-lg" role="button" href="pages/rankPredictor.html"
+        target="_blank">
+        Rank Predictor
+      </a>
 
-                  <table class="table table-success table-bordered">
-                    <thead class="align-middle">
-                      <th class="table-primary">Total Students</th>
-                      <th class="table-primary">GEN</th>
-                      <th class="table-primary">EWS</th>
-                      <th class="table-primary">OBC</th>
-                      <th class="table-primary">SC</th>
-                      <th class="table-primary">ST</th>
-                    </thead>
-                    <tbody>
-                      <tr class="table-primary">
-                        <td class="table-primary">1,119,889</td>
-                        <td class="table-primary">503,426</td>
-                        <td class="table-primary">81,413</td>
-                        <td class="table-primary">402,490</td>
-                        <td class="table-primary">97,685</td>
-                        <td class="table-primary">34,875</td>
-                      </tr>
-                    </tbody>
-                    <tfoot></tfoot>
-                  </table>
-
-                  <div
-                    class="alert alert-info alert-dismissible fade show"
-                    role="alert"
-                  >
-                    <strong><i class="fas fa-info-circle"></i></strong> All
-                    shown results are predicted with latest previous data
-                    available. For any other Query mail us at
-                    contact@bookshlf.in.
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="alert"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                </div>
-                <h3 id="result-box-message"></h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> 
-    </div> 
-    <!-- Footer -->
-    <footer class="
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="
         d-flex
         flex-wrap
         justify-content-between
@@ -345,69 +76,34 @@
         py-3
         border-top
       ">
-      <div class="col-md-4 d-flex align-items-center">
-        <a
-          href="/"
-          class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
-        >
-          <img
-            src="images/smallLogo.svg"
-            alt="bookshlf.in"
-            class="d-inline-block align-text-center brand-footer"
-          />
-        </a>
-        <span>©
-        <script>
-          document
-            .getElementById("copyright")
-            .appendChild(document.createTextNode(new Date().getFullYear()));
-        </script>
-        Bookshlf All Rights Reserved.
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        <img src="images/smallLogo.svg" alt="bookshlf.in" class="d-inline-block align-text-center brand-footer" />
+      </a>
+      <span>© 2022 Bookshlf All Rights Reserved.
       </span>
-        <!-- <span>©
-          <span id="current-year"></span>
-          Bookshlf All Rights Reserved.</span> -->
-      </div>
+    </div>
 
-      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="ms-3">
-          <a
-            href="https://www.facebook.com/Bookshlf-109479771200918"
-            target="_blank"
-            ><i class="fab fa-facebook"></i
-          ></a>
-        </li>
-        <li class="ms-3">
-          <a href="https://www.instagram.com/_bookshlf/" target="_blank"
-            ><i class="fab fa-instagram"></i
-          ></a>
-        </li>
-        <li class="ms-3">
-          <a
-            href="https://www.youtube.com/channel/UCvZJWq7cQ4-cGJFsCWIppGQ"
-            target="_blank"
-            ><i class="fab fa-youtube"></i
-          ></a>
-        </li>
-        <li class="ms-3">
-          <a
-            href="https://www.linkedin.com/in/bookshlf-by-aman-861073223/"
-            target="_blank"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-        </li>
-        <li class="ms-3">
-          <a
-            href="https://twitter.com/BookshlfA"
-            target="_blank"
-            ><i class="fab fa-twitter"></i
-          ></a>
-        </li>
-      </ul>
-    </footer>
-  </body>
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3">
+        <a href="https://www.facebook.com/Bookshlf-109479771200918" target="_blank"><i class="fab fa-facebook"></i></a>
+      </li>
+      <li class="ms-3">
+        <a href="https://www.instagram.com/_bookshlf/" target="_blank"><i class="fab fa-instagram"></i></a>
+      </li>
+      <li class="ms-3">
+        <a href="https://www.youtube.com/channel/UCvZJWq7cQ4-cGJFsCWIppGQ" target="_blank"><i
+            class="fab fa-youtube"></i></a>
+      </li>
+      <li class="ms-3">
+        <a href="https://www.linkedin.com/in/bookshlf-by-aman-861073223/" target="_blank"><i
+            class="fab fa-linkedin"></i></a>
+      </li>
+      <li class="ms-3">
+        <a href="https://twitter.com/BookshlfA" target="_blank"><i class="fab fa-twitter"></i></a>
+      </li>
+    </ul>
+  </footer>
+</body>
 
-  <!-- Scripts -->
-  <script src="scripts/rank-predictor.js"></script>
-  
 </html>
