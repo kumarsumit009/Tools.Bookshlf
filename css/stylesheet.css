@@ -68,6 +68,24 @@ html {
   transition: all 0.5s;
 }
 
+#output-logger {
+  color: rgb(0, 185, 0);
+  font-family: monospace;
+  font-size: 12px;
+}
+
+#error-load {
+  display: none;
+}
+
+#loading {
+  display: none;
+}
+
+#result {
+  display: none;
+}
+
 .brand {
   height: 50px;
 }
